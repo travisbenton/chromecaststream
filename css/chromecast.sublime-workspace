@@ -1,0 +1,1842 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"profil",
+				"profilePic"
+			],
+			[
+				"spotify",
+				"spotifyId"
+			],
+			[
+				"echo",
+				"echoClientId"
+			],
+			[
+				"Spot",
+				"SpotifyList"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"play",
+				"playlistName"
+			],
+			[
+				"Spo",
+				"SpotifyList"
+			],
+			[
+				"auth",
+				"authToken"
+			],
+			[
+				"crea",
+				"createPlaylist"
+			],
+			[
+				"find",
+				"findUserName"
+			],
+			[
+				"proto",
+				"proto	Prototype"
+			],
+			[
+				"oh",
+				"ovy-h	overflow-y: hidden;"
+			],
+			[
+				"primary",
+				"primary-text-color"
+			],
+			[
+				"til",
+				"tileStream"
+			],
+			[
+				"vote",
+				"votekatyperry"
+			],
+			[
+				"leader",
+				"leaderSum"
+			],
+			[
+				"hasht",
+				"hashtag-1"
+			],
+			[
+				"cl",
+				"clone	.clone()"
+			],
+			[
+				"massrel",
+				"massrel-js"
+			],
+			[
+				"winner",
+				"winnerIndex"
+			],
+			[
+				"old",
+				"oldIndex"
+			],
+			[
+				"make",
+				"makeFancyHappen"
+			],
+			[
+				"create",
+				"createContainer"
+			],
+			[
+				"_",
+				"_fakeContent"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"render",
+				"renderPage"
+			],
+			[
+				"start",
+				"startPoller"
+			],
+			[
+				"keywor",
+				"keywordsArr"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"stream",
+				"streamName"
+			],
+			[
+				"leaderb",
+				"leaderboardModel"
+			],
+			[
+				"ibm",
+				"ibmLeaderboard"
+			],
+			[
+				"cur",
+				"cur	cursor: ${pointer};"
+			],
+			[
+				"mut",
+				"mutedAndAuto"
+			],
+			[
+				"b",
+				"br	Backbone Router"
+			],
+			[
+				"visible_ch",
+				"visible_child_zero"
+			],
+			[
+				"consen",
+				"consentModal"
+			],
+			[
+				"fitb",
+				"fitbList"
+			],
+			[
+				"static-",
+				"static_img-1"
+			],
+			[
+				"slider",
+				"sliderSpeed"
+			],
+			[
+				"sponsor",
+				"sponsor-scroll"
+			],
+			[
+				"page-1",
+				"page1-Delay"
+			],
+			[
+				"massre",
+				"massrel-js-backbone"
+			],
+			[
+				"mass",
+				"massrel-js-backbone"
+			],
+			[
+				"drop",
+				"dropdownText"
+			],
+			[
+				"anim",
+				"animSpeed"
+			],
+			[
+				"poller6",
+				"poller6Meta"
+			],
+			[
+				"out",
+				"outerWidth	.outerWidth"
+			],
+			[
+				"rand",
+				"randKey"
+			],
+			[
+				"j",
+				"jquery"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"pos",
+				"pos-a	position: absolute;"
+			],
+			[
+				"pad",
+				"padding-right"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/travisbenton/code/chromecast/package.json",
+			"settings":
+			{
+				"buffer_size": 594,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/travisbenton/code/TorrenTV/src/app/app.js",
+			"settings":
+			{
+				"buffer_size": 23739,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/travisbenton/code/chromecast/main.js",
+			"settings":
+			{
+				"buffer_size": 4000,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "global.scss",
+			"settings":
+			{
+				"buffer_size": 2449,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/travisbenton/code/chromecast/index.html",
+			"settings":
+			{
+				"buffer_size": 791,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 169.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"syn java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn handl",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"syn sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"syn scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"syh",
+				"Set Syntax: HTML"
+			],
+			[
+				"syn javscrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn javascip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn javascrip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn han",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"syn hand",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"brows",
+				"Preferences: Browse Packages"
+			],
+			[
+				"syn coff",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"syn jsa",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn h",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"syn json",
+				"Set Syntax: JSON"
+			],
+			[
+				"syn javscip",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"auto",
+				"Autoprefix CSS"
+			],
+			[
+				"syn css",
+				"Set Syntax: CSS"
+			],
+			[
+				"syn jquer",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"brac",
+				"BracketHighlighter: Jump to Right Bracket"
+			],
+			[
+				"syn coffe",
+				"Set Syntax: CoffeeScript"
+			],
+			[
+				"sy json",
+				"Set Syntax: JSON"
+			],
+			[
+				"git ",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"js",
+				"JSHint"
+			],
+			[
+				"syn less",
+				"Set Syntax: LESS"
+			],
+			[
+				"syn les",
+				"Set Syntax: LESS"
+			],
+			[
+				"syn jquery",
+				"Set Syntax: jQuery (JavaScript)"
+			],
+			[
+				"syn javasc	",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"gi",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"compare",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"compae",
+				"GitGutter: Compare Against HEAD"
+			],
+			[
+				"gutter",
+				"GitGutter: Compare Against Commit"
+			],
+			[
+				"package remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"git anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git log",
+				"Git: Log Current File"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"git  statu",
+				"Git: Status"
+			],
+			[
+				"git",
+				"Git: Blame"
+			],
+			[
+				"git h",
+				"Git: Commit history"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"ann",
+				"Git: Toggle Annotations"
+			],
+			[
+				"anno",
+				"Git: Toggle Annotations"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"lin",
+				"SublimeLinter: Next Error"
+			],
+			[
+				"jshint",
+				"JSHint"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"aut",
+				"Autoprefix CSS"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"au",
+				"Autoprefix CSS"
+			],
+			[
+				"syn javascript",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"aus",
+				"Autoprefix CSS"
+			],
+			[
+				"a",
+				"Autoprefix CSS"
+			]
+		],
+		"width": 529.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/travisbenton/code/chromecast",
+		"/Users/travisbenton/code/chromecast/css/build"
+	],
+	"file_history":
+	[
+		"/Users/travisbenton/code/TorrenTV/src/app/app.js",
+		"/Users/travisbenton/code/chromecast/main.js",
+		"/Users/travisbenton/code/chromecast/index.js",
+		"/Users/travisbenton/code/TorrenTV/package.json",
+		"/Users/travisbenton/code/TorrenTV/src/app/index.html",
+		"/Users/travisbenton/code/TorrenTV/src/app/package.json",
+		"/Users/travisbenton/code/TorrenTV/src/app/index.xml",
+		"/Users/travisbenton/code/chromecast/index.html",
+		"/Users/travisbenton/code/chromecast/css/global.scss",
+		"/Users/travisbenton/code/chromecast/package.json",
+		"/Users/travisbenton/code/chromecast/css/style.scss",
+		"/Users/travisbenton/code/chromecast/css/style.css",
+		"/Users/travisbenton/code/My-Grunt-Boilerplate/Gruntfile.js",
+		"/Users/travisbenton/code/this-is-a-test/index.js",
+		"/Users/travisbenton/code/chromecast/Gruntfile.js",
+		"/Users/travisbenton/code/empacol/package.json",
+		"/Users/travisbenton/code/chromecast/style.css",
+		"/Users/travisbenton/code/My-Grunt-Boilerplate/package.json",
+		"/Users/travisbenton/code/chromecast/node_modules/peerflix/README.md",
+		"/Users/travisbenton/code/this-is-a-test/index.html",
+		"/Users/travisbenton/code/this-is-a-test/public/main.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/encoding.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/language.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/accepts/node_modules/negotiator/lib/mediaType.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/content-disposition/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/cookie-signature/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/debug/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/debug/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/debug/node.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/depd/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/depd/lib/compat/callsite-tostring.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/etag/node_modules/crc/lib/crc.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/on-finished/package.json",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/on-finished/README.md",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/path-to-regexp/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/path-to-regexp/test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/proxy-addr/node_modules/forwarded/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/lib/ipaddr.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/proxy-addr/node_modules/ipaddr.js/src/ipaddr.coffee",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/package.json",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/README.md",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/lib/parse.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/lib/stringify.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/test/parse.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/qs/test/stringify.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/send/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/send/node_modules/mime/mime.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/serve-static/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/type-is/node_modules/mime-types/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/express/node_modules/vary/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/lib/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/lib/socket.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/debug/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/debug/lib/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/lib/server.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/lib/transports/polling-jsonp.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/lib/transports/polling-xhr.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/lib/transports/polling.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/debug/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/debug/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/debug/node.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/lib/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/lib/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/base64-arraybuffer/test/base64-arraybuffer_test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/utf8.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/utf8.js.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/build/gyp-mac-tool",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/build/Makefile",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Receiver.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/Sender.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/WebSocket.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/lib/WebSocketServer.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/engine.io/node_modules/ws/wscat/bin/wscat",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/has-binary-data/node_modules/isarray/build/build.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-adapter/node_modules/debug/node.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/socket.io.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/lib/url.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/engine.io.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/socket.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transport.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/polling.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/lib/transports/websocket.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/.bin/wscat",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/debug.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/debug/node.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/lib/browser.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/lib/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/base64-arraybuffer/test/base64-arraybuffer_test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/utf8.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/engine.io-parser/node_modules/utf8/coverage/utf8.js/utf8.js.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/has-cors/node_modules/global/test/mocha.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parsejson/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseqs/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/index.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/parseuri/test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/bench/util.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/bin/wscat",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/build/gyp-mac-tool",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/build/Makefile",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/examples/fileapi/server.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/examples/serverstats/public/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/examples/serverstats-express_3/public/index.html",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Receiver.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/Sender.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/WebSocket.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/lib/WebSocketServer.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/commander/package.json",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/commander/Readme.md",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/node_modules/commander/lib/commander.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/hybi-common.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/Receiver.hixie.test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/Sender.hixie.test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/testserver.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/WebSocket.test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/ws/test/WebSocketServer.test.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/lib/XMLHttpRequest.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-302.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-303.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/engine.io-client/node_modules/xmlhttprequest/tests/test-redirect-307.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/has-binary/node_modules/isarray/build/build.js",
+		"/Users/travisbenton/code/this-is-a-test/node_modules/socket.io/node_modules/socket.io-client/node_modules/parseuri/index.js"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/Users/travisbenton/code/client-templates/nba/2014-spotlight",
+			"/Users/travisbenton/code/client-templates/logoTV/social-vote-2014-desktop",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-venue/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-venue/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-venue/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/mtv/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-venue/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/mtv/social-battle/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-venue/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/client-templates/mtv/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop/",
+			"/Users/travisbenton/code/viz/mtv/vma-2014-tv/",
+			"/Users/travisbenton/code/viz/mtv/vma-2014-tv/dev/js/",
+			"/Users/travisbenton/code/viz/mtv/vma-2014-tv/dev/js",
+			"/Users/travisbenton/code/client-templates",
+			"/Users/travisbenton/code/viz/mtv/vma-2014-tv/",
+			"/Users/travisbenton/code/viz/vma-2014-tv/",
+			"/Users/travisbenton/code/viz/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop",
+			"/Users/travisbenton/code/viz/mtv/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/mtv/woodies-2014-desktop",
+			"/Users/travisbenton/code/viz-templates/mtv/woodies-2014-desktop",
+			"/Users/travisbenton/code/viz-templates/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/builder-sdk/",
+			"/Users/travisbenton/code/viz/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/us-open/amex-fan-experience/",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/us-open/amex-fan-experience/",
+			"/Users/travisbenton/code/client-templates/michaelkors/destination-kors/",
+			"/Users/travisbenton/code/client-templates/michaelkors/destination-kors/dev/js/views",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/on(",
+			"/Users/travisbenton/code/client-templates/fifa/fifa14-social-home/dev",
+			"/Users/travisbenton/code/viz/nba/player-pulse-2013/dev/js",
+			"/Users/travisbenton/code/viz/nba/player-pulse-2013",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/us-open/social-wall/dev/bower_components/status-renderer/dev/js/",
+			"/Users/travisbenton/code/client-templates/us-open/social-wall/dev/bower_components/status-renderer",
+			"/Users/travisbenton/code/client-templates/us-open/social-wall/dev/bower_components",
+			"/Users/travisbenton/code/viz/nba/player-pulse-2013/dev",
+			"/Users/travisbenton/code/client-templates/CMAFest/cmafest-ftu/dev/",
+			"/Users/travisbenton/code/client-templates/CMAFest/cmafest-ftu/dev/js/",
+			"/Users/travisbenton/code/client-templates/us-open/social-wall",
+			"/Users/travisbenton/code/client-templates/",
+			"/Users/travisbenton/code/client-templates/us-open/social-wall",
+			"/Users/travisbenton/code/client-templates",
+			"/Users/travisbenton/code/viz/nba",
+			"/Users/travisbenton/code/viz/univision/dynamic-mosaic",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"console.log",
+			"searchterm",
+			"loadMovieData",
+			"this",
+			"generalSearch",
+			"self.device.play(href",
+			"sending_resource",
+			"playindevices",
+			"trytoplay",
+			"wanttoplay",
+			"browser.on('deviceOn', function(device){",
+			"startedtime",
+			"statusMessage",
+			"wanttoplay",
+			"emitter",
+			"myNumberIs",
+			"pause",
+			"ips",
+			"devices",
+			"playInDevices",
+			"emitter",
+			"peerflix",
+			"gui",
+			"wire",
+			"invalid",
+			"verified",
+			"hotswaps",
+			"peerflix",
+			"device",
+			"connectToDevice",
+			"castVideo",
+			"cast",
+			"connectToDevice",
+			"UI",
+			"hamspacing",
+			"cursor",
+			"console.log",
+			"path",
+			"execPath",
+			"debugBack",
+			"var ",
+			"debug",
+			"$prim ",
+			"$prime ",
+			"header",
+			"sass",
+			"scss",
+			"onready",
+			"openinfinder",
+			"playindevices",
+			"playInDevices",
+			"engine",
+			"peerflix",
+			"wires",
+			"statusMessage",
+			"bytes",
+			"swarm",
+			"port",
+			"address",
+			"onready",
+			"engine",
+			"var engine",
+			"gotTorrent",
+			"peerflix",
+			"peer-wire",
+			"peerflix",
+			"createReadStream",
+			"peerflix",
+			"address",
+			"address()",
+			"global_href",
+			"playindevices",
+			"wanttoplay",
+			"emitter",
+			"scfs",
+			"device.play",
+			"evice.play",
+			"devices",
+			"self.devices",
+			"toggleChromecastDevice",
+			"ips",
+			"chromecaster",
+			"chromecastjs",
+			"connection",
+			"userName",
+			"''",
+			"index",
+			"statusAvatar",
+			"tile-7",
+			"@mobilebreak",
+			"768",
+			"find-me-wrapper",
+			"var $box",
+			"tweet-button-1",
+			"tweet-button",
+			"twitter",
+			"tweet",
+			"nnn_2014_female_social_vote",
+			"_results",
+			"updateBoxes",
+			"_results",
+			"boxtmpl",
+			"jessicahmillr/logotv-test",
+			"LogoTVTest/delete",
+			"attachevents",
+			"airplay",
+			"node",
+			"option",
+			"grunt.option",
+			"log",
+			"mdns",
+			".tif",
+			".tiff",
+			"nominee",
+			"nomineeInfo",
+			"masonry",
+			"perfect",
+			"nomineeinfo",
+			"nominee",
+			"context.title",
+			"nomineeInfo",
+			"info.tweet",
+			"nominees",
+			"info",
+			"content",
+			"intent",
+			"$.extend",
+			"context"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"979px",
+			" url(\"static/img/",
+			" ",
+			"'],\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/travisbenton/code/chromecast/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								44,
+								44
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/travisbenton/code/TorrenTV/src/app/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23739,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11830,
+								11830
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 3.0,
+						"translation.y": 6778.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/travisbenton/code/chromecast/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4000,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3956,
+								3956
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1946.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "global.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								78,
+								80
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 31.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/travisbenton/code/chromecast/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 791,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								427,
+								427
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/base16-eighties.dark (SL).tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 167.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "chromecast.sublime-project",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"travis/test/spec.json",
+				"travisbenton/test/template/spec.json"
+			],
+			[
+				"travibenton/test/index.hbs",
+				"travisbenton/test/template/index.hbs"
+			],
+			[
+				"travis/test/index",
+				"travisbenton/test/dev/js/index.js"
+			],
+			[
+				"logotv/index",
+				"logoTV/social-vote-2014-desktop/dev/js/index.js"
+			],
+			[
+				"",
+				"logoTV/social-vote-2014-desktop/template/index.hbs"
+			],
+			[
+				"sirius/spec",
+				"siriusdecisions/2014-summit-web/template/spec.json"
+			],
+			[
+				"logotv/box",
+				"logoTV/social-vote-2014-desktop/dev/templates/box.hbs"
+			],
+			[
+				".less",
+				"fifa/fifa14-blog/template/map.less"
+			],
+			[
+				"logotvspec",
+				"logoTV/social-vote-2014-desktop/template/spec.json"
+			],
+			[
+				"voting.js",
+				"logoTV/social-vote-2014-desktop/dev/js/voting.js"
+			],
+			[
+				"logotvwall.js",
+				"logoTV/social-vote-2014-desktop/dev/js/wall.js"
+			],
+			[
+				"sgar/mtv/index",
+				"sgarger/mtv_rebuild/template/index.hbs"
+			],
+			[
+				"woodiesdesk/ind",
+				"mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"woodiven/box",
+				"client-templates/mtv/woodies-2014-venue/dev/templates/box.hbs"
+			],
+			[
+				"woodidesk/box",
+				"client-templates/mtv/woodies-2014-desktop/dev/templates/box.hbs"
+			],
+			[
+				"logotv/grid",
+				"client-templates/logoTV/social-vote-2014-desktop/dev/js/grid.js"
+			],
+			[
+				"woodivenu/wall",
+				"client-templates/mtv/woodies-2014-venue/dev/js/wall.js"
+			],
+			[
+				"woodidesk/wall.",
+				"client-templates/mtv/woodies-2014-desktop/dev/js/wall.js"
+			],
+			[
+				"woodiesdesk/spec",
+				"client-templates/mtv/woodies-2014-desktop/template/spec.json"
+			],
+			[
+				"usopen/amex/index",
+				"client-templates/us-open/amex-fan-experience/dev/js/index.js"
+			],
+			[
+				"woodidek/index",
+				"client-templates/mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"woodiedesk/spec",
+				"client-templates/mtv/woodies-2014-desktop/template/spec.json"
+			],
+			[
+				"woodiesdesktop/index",
+				"client-templates/mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"sirius/venue/page",
+				"client-templates/siriusdecisions/2014-summit-venue/dev/js/page-1.js"
+			],
+			[
+				"sirius/venue/index.js",
+				"client-templates/siriusdecisions/2014-summit-venue/dev/js/index.js"
+			],
+			[
+				"sirius/web/index.js",
+				"client-templates/siriusdecisions/2014-summit-web/dev/js/index.js"
+			],
+			[
+				"woodiesdesk/inde",
+				"client-templates/mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"index",
+				"boilerplate/index.html"
+			],
+			[
+				"woodiesdesk/spe",
+				"mtv/woodies-2014-desktop/template/spec.json"
+			],
+			[
+				"woodiesdesk/box",
+				"mtv/woodies-2014-desktop/dev/templates/box.hbs"
+			],
+			[
+				"woodiesdesk/spec.",
+				"mtv/woodies-2014-desktop/template/spec.json"
+			],
+			[
+				"woodiedesk/inde",
+				"mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"woodiedesk/grid",
+				"mtv/woodies-2014-desktop/dev/js/grid.js"
+			],
+			[
+				"woodidesk/wall.js",
+				"mtv/woodies-2014-desktop/dev/js/wall.js"
+			],
+			[
+				"sirius/index.js",
+				"client-templates/siriusdecisions/2014-summit-venue/dev/js/index.js"
+			],
+			[
+				"woodiesdesk/index",
+				"client-templates/mtv/woodies-2014-desktop/template/index.hbs"
+			],
+			[
+				"woodiesdesk/grid",
+				"client-templates/mtv/woodies-2014-desktop/dev/js/grid.js"
+			],
+			[
+				"woodiesdeskt/spec",
+				"client-templates/mtv/woodies-2014-desktop/template/spec.json"
+			],
+			[
+				"woodiesvenue/spec",
+				"client-templates/mtv/woodies-2014-venue/template/spec.json"
+			],
+			[
+				"woodies-2014-ven/index",
+				"client-templates/mtv/woodies-2014-venue/template/index.hbs"
+			],
+			[
+				"wall",
+				"client-templates/mtv/woodies-2014-desktop/dev/js/wall.js"
+			],
+			[
+				"/mtv/woo/index.js",
+				"client-templates/mtv/woodies-2014-desktop/dev/js/index.js"
+			],
+			[
+				"index.hbs",
+				"client-templates/us-open/template/index.hbs"
+			],
+			[
+				"face",
+				"viz/dell/inspired-gifting/dev/js/facebook.js"
+			],
+			[
+				"stayfree-mosaic/moment.js",
+				"viz/us-weekly/stayfree-mosaic/dev/js/vendor/moment.js"
+			],
+			[
+				"ronald/spec",
+				"client-templates/mcdonalds/ronald-is-you-mosaic/template/spec.json"
+			],
+			[
+				"/telemundo/web/index.js",
+				"client-templates/telemundo/2014-billboards-web/dev/js/index.js"
+			],
+			[
+				"/tele/2014pepsi/index.js",
+				"client-templates/telemundo/2014-billboards-on-air-no-pepsi/dev/js/index.js"
+			],
+			[
+				"/telemundo/on-air/index.js",
+				"client-templates/telemundo/2014-billboards-on-air/dev/js/index.js"
+			],
+			[
+				"/fifaindex.less",
+				"client-templates/fifa/worldcup-2014/template/index.less"
+			],
+			[
+				"/fifaindex",
+				"client-templates/fifa/worldcup-2014/template/index.less"
+			],
+			[
+				"/fifaindex.h",
+				"client-templates/fifa/worldcup-2014/template/index.hbs"
+			],
+			[
+				"/fifaindex.",
+				"client-templates/fifa/worldcup-2014/template/index.less"
+			],
+			[
+				"/fifaind",
+				"client-templates/fifa/worldcup-2014/template/index.hbs"
+			],
+			[
+				"fifaspec.json",
+				"client-templates/fifa/worldcup-2014/template/spec.json"
+			],
+			[
+				"/fifa/spec.j",
+				"client-templates/fifa/worldcup-2014/template/spec.json"
+			],
+			[
+				"co",
+				"node_modules/grunt-components/test/expected/custom_options"
+			],
+			[
+				"billboardswebindex",
+				"client-templates/telemundo/2014-billboards-web/template/index.hbs"
+			],
+			[
+				"ncaaless",
+				"client-templates/lg/ncaa-vine/template/index.less"
+			],
+			[
+				"lgspec.json",
+				"client-templates/lg/ncaa-vine/template/spec.json"
+			],
+			[
+				"tvgpoller",
+				"tvgn/survivor-vs-amazingrace/dev/js/poller.js"
+			],
+			[
+				"telespec",
+				"telemundo/billboards/template/spec.json"
+			],
+			[
+				"tvgpoller.js",
+				"tvgn/survivor-vs-amazingrace/dev/js/poller.js"
+			],
+			[
+				"teleindex",
+				"telemundo/billboards/template/index.hbs"
+			],
+			[
+				"teleindex.js",
+				"telemundo/billboards/dev/js/index.js"
+			],
+			[
+				"telespec.j",
+				"telemundo/billboards/template/spec.json"
+			],
+			[
+				"telemundospec",
+				"telemundo/billboards/template/spec.json"
+			],
+			[
+				"tvgnpoller",
+				"tvgn/survivor-vs-amazingrace/dev/js/poller.js"
+			],
+			[
+				"billboards/bo",
+				"telemundo/billboards/bower.json"
+			],
+			[
+				"generi",
+				"survivor-vs-amazingrace/dev/bower_components/massrel-js/src/generic_poller.js"
+			],
+			[
+				"massre",
+				"survivor-vs-amazingrace/dev/bower_components/massrel-js/massrel.js"
+			],
+			[
+				"massrel-js-backbone/metapo",
+				"survivor-vs-amazingrace/dev/bower_components/massrel-js-backbone/MetaPoller.js"
+			],
+			[
+				"leaderboarspe",
+				"components/leaderboard-1/spec.json"
+			],
+			[
+				"index.js",
+				"dev/js/index.js"
+			],
+			[
+				"tile-pho",
+				"dev/js/tile-photo.js"
+			],
+			[
+				"tile-te",
+				"dev/js/tile-text.js"
+			],
+			[
+				"staticindex",
+				"template/static/js/index.js"
+			],
+			[
+				"spec",
+				"template/spec.json"
+			],
+			[
+				"tile",
+				"dev/js/tile-photo.js"
+			],
+			[
+				"less-1.6.2.js",
+				"node_modules/less/dist/less-1.6.2.js"
+			],
+			[
+				"tilepho",
+				"dev/js/tile-photo.js"
+			],
+			[
+				"spec.",
+				"template/spec.json"
+			],
+			[
+				"tile-text",
+				"dev/js/tile-text.js"
+			],
+			[
+				"main.js",
+				"dev/bower_components/massrel-js-backbone/main.js"
+			],
+			[
+				"compon",
+				"component.json"
+			],
+			[
+				"inde",
+				"dev/index.html.hbs"
+			],
+			[
+				"component",
+				"component.json"
+			],
+			[
+				"project",
+				"project.json"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				".json",
+				"project.json"
+			],
+			[
+				"index.html",
+				"dev/index.html.hbs"
+			],
+			[
+				"main",
+				"js/main.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"clien",
+				"~/code/client-templates.sublime-project"
+			],
+			[
+				"",
+				"~/code/empacol.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 237.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

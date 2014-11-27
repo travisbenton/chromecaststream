@@ -1,0 +1,188 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+
+/*-- CSS rules --*/
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", Helvetica, Sans-serif;
+  color: #000;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: .5rem;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+.wrap,
+.modal-wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 62.5rem;
+}
+
+.modal-wrap {
+  margin-top: 4rem;
+}
+
+.search-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-block;
+}
+
+.search-input {
+  border: 0;
+  border-bottom: 0.25rem solid #000;
+  height: 5rem;
+  width: 100%;
+  font-size: 3rem;
+  background: url(http://upload.wikimedia.org/wikipedia/commons/e/eb/High-contrast-system-search.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  padding-left: 3.5rem;
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #000;
+}
+
+.search-bar {
+  height: 5rem;
+  width: 100%;
+}
+
+.search-term,
+.search-filter {
+  color: #737373;
+  margin-top: 2rem;
+  display: inline-block;
+}
+
+.search-filter {
+  float: right;
+}
+
+.search-filter a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.poster {
+  cursor: pointer;
+  float: left;
+  height: 15rem;
+  width: 11rem;
+  margin: 0.75rem;
+  opacity: 0;
+  background-size: cover;
+}
+
+.modal {
+  opacity: 0;
+  background: white;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: .3s;
+  transition: .3s;
+  overflow: scroll;
+  padding-bottom: 2rem;
+}
+
+.modal.active {
+  opacity: .99;
+  z-index: 1;
+}
+
+.hamb-wrap {
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.hamb {
+  width: 3rem;
+  background: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.hamb:before,
+.hamb:after {
+  content: '';
+  position: absolute;
+  background: #000;
+  height: .25rem;
+  width: 100%;
+  border-radius: 3px;
+  top: 0;
+}
+
+.hamb:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.hamb:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.synopsis {
+  font-size: 1.3em;
+  clear: both;
+}
+
+.synopsis img {
+  float: left;
+  padding: .5rem 1rem .5rem 0;
+}
+
+.torrent-results th {
+  font-weight: bolder;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+.torrent-results td,
+.torrent-results th {
+  padding: 0 1rem .25rem 0;
+}
+
+/*# sourceMappingURL=global.css.map */
