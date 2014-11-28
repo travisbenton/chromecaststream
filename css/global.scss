@@ -71,11 +71,11 @@ button:focus {
   position: relative;
   margin: 0 auto;
   width: $wrap-width;
+  padding-bottom: 2rem;
 }
 
 .modal-wrap {
   margin-top: 4rem;
-  padding-bottom: 2rem;
 }
 
 .search-icon {
@@ -220,7 +220,7 @@ button:focus {
   bottom: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .25);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   line-height: 2rem;
   .control-wrap {
     width: 5rem;

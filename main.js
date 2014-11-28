@@ -23,10 +23,11 @@ function TorrentStream() {
     newRelease:    'lists/dvds/new_releases.json',
     movieSearch: 'movies.json'
   }
-  this.device;
   this.nowPlaying = {
     title: ''
   }
+  this.device;
+  this.debug = true;
 }
 
 TorrentStream.prototype.init = function() {
@@ -122,12 +123,18 @@ TorrentStream.prototype.buildModal = function() {
   });
 
   // close modal when 'X' is clicked
-  $('body').on('click', '.hamb-wrap', function() {
-    $('.modal')
-      .removeClass('active')
-      .html('');
-    $('body').removeClass('modal-open');
+  $('body').on('click', '.hamb-wrap', closeModal);
+  // close modal when 'ESC' is pressed
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) { closeModal() }
   });
+
+  function closeModal() {
+    $('.modal')
+        .removeClass('active')
+        .html('');
+    $('body').removeClass('modal-open');
+  }
 
   // Trigger RT search on enter keypress
   $('.search-input').bind("enterKey",function(e){
@@ -207,7 +214,18 @@ TorrentStream.prototype.displayResults = function(results) {
 
   $('.cast').on('click', function() {
     var index = $(this).data('torrent-rank');
-    self.castVideo(results[index]);
+    // cast local video if debugging (avoids my having to download
+    // a torrent every time I test something)
+    if (self.debug) {
+      self.device.play('https://ia700408.us.archive.org/26/items/BigBuckBunny_328/BigBuckBunny_512kb.mp4', 0, function(){
+        console.log('Now streaming to chromecast!');
+
+        self.nowPlaying.title = 'Big Buck Bunny';
+        self.playBar(arguments[1]);
+      });
+    } else {
+      self.castVideo(results[index]);
+    }
   });
 }
 
@@ -253,7 +271,7 @@ TorrentStream.prototype.playBar = function(slidePos) {
       'Now playing: ' + self.nowPlaying.title + 
     '</span>' 
   )
-  
+
   $('body').append($nowPlaying);
   $nowPlaying.velocity('transition.slideUpBigIn');
 
@@ -268,7 +286,7 @@ TorrentStream.prototype.playBar = function(slidePos) {
             { display: "inline" }
           );
           $('.control-text').html(
-            self.nowPlaying.title + ' is paused'
+            self.nowPlaying.title + ' has been stopped'
           );
         } 
       });
