@@ -253,6 +253,7 @@ TorrentStream.prototype.playBar = function(slidePos) {
       'Now playing: ' + self.nowPlaying.title + 
     '</span>' 
   )
+  
   $('body').append($nowPlaying);
   $nowPlaying.velocity('transition.slideUpBigIn');
 
@@ -265,6 +266,9 @@ TorrentStream.prototype.playBar = function(slidePos) {
           $('.play').velocity(
             { opacity: 1 }, 
             { display: "inline" }
+          );
+          $('.control-text').html(
+            self.nowPlaying.title + ' is paused'
           );
         } 
       });
@@ -279,6 +283,9 @@ TorrentStream.prototype.playBar = function(slidePos) {
             { opacity: 1 }, 
             { display: "inline" }
           );
+          $('.control-text').html(
+            self.nowPlaying.title + ' is paused'
+          );
         } 
       });
       $('.stop').velocity({ opacity: 0 }, { display: "none" });
@@ -291,6 +298,9 @@ TorrentStream.prototype.playBar = function(slidePos) {
           $('.pause, .stop').velocity(
             { opacity: 1 }, 
             { display: "inline" }
+          );
+          $('.control-text').html(
+            'Now playing: ' + self.nowPlaying.title
           );
         }
       });
