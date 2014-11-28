@@ -212,6 +212,7 @@ button:focus {
 }
 
 .now-playing {
+  opacity: 0;
   position: fixed;
   width: 100%;
   height: 2rem;
@@ -219,12 +220,21 @@ button:focus {
   bottom: 0;
   left: 0;
   z-index: 99;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .4);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .25);
+  line-height: 2rem;
+  .control-wrap {
+    width: 5rem;
+    display: inline-block;
+    text-align: center;
+  }
   .control {
     margin: 0 .4rem;
-    line-height: 2rem;
-    pointer: cursor;
+    cursor: pointer;
     -webkit-user-select: none;
     user-select: none;
+  }
+  .play {
+    opacity: 0;
+    display: none;
   }
 }

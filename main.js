@@ -99,6 +99,7 @@ TorrentStream.prototype.buildModal = function() {
     var data = $(this).data();
     var data = data.info;
 
+    // TO DO: Templatize
     $('.modal')
       .addClass('active')
       .html(
@@ -180,6 +181,8 @@ TorrentStream.prototype.displayResults = function(results) {
 
   // please god, forgive me (ಥ﹏ಥ)
   // creates table to display torrent results in modal
+  //
+  // TO DO: Templatize
   $('.modal-wrap').append(
     $('<table />', {class: 'torrent-results'})
       .append(
@@ -232,32 +235,65 @@ TorrentStream.prototype.playBar = function(slidePos) {
     class: 'now-playing'
   });
 
+  // TO DO: Templatize
   $nowPlaying.html(
-    '<a class="stop control">' +
-      '<i class="fa fa-stop"></i>' +
-    '</a>' + 
-    '<a class="pause control">' + 
-      '<i class="fa fa-pause"></i>' +
-    '</a>' +
-    'Now playing ' + self.nowPlaying.title
+    '<div class="control-wrap">' +
+      '<a class="stop control">' +
+        '<i class="fa fa-stop"></i>' +
+      '</a>' + 
+      '<a class="pause control">' + 
+        '<i class="fa fa-pause"></i>' +
+      '</a>' +
+      '<a class="play control">' + 
+        '<i class="fa fa-play"></i>' +
+      '</a>' +
+    '</div>' + 
+
+    '<span class="control-text">' +
+      'Now playing: ' + self.nowPlaying.title + 
+    '</span>' 
   )
   $('body').append($nowPlaying);
+  $nowPlaying.velocity('transition.slideUpBigIn');
 
   $('body')
     .on('click', '.stop', function() {
       self.device.stop();
-      $(this).velocity({ opacity: 0 }, { display: "none" });
-      //fade in play
+      $(this).velocity({ opacity: 0 }, { 
+        complete: function() {
+          $(this).css({ display: "none" })
+          $('.play').velocity(
+            { opacity: 1 }, 
+            { display: "inline" }
+          );
+        } 
+      });
+      $('.pause').velocity({ opacity: 0 }, { display: "none" });
     })
     .on('click', '.pause', function() {
       self.device.pause();
-      $(this).velocity({ opacity: 0 }, { display: "none" });
-      //fade in play
+      $(this).velocity({ opacity: 0 }, { 
+        complete: function() {
+          $(this).css({ display: "none" })
+          $('.play').velocity(
+            { opacity: 1 }, 
+            { display: "inline" }
+          );
+        } 
+      });
+      $('.stop').velocity({ opacity: 0 }, { display: "none" });
     })
     .on('click', '.play', function() {
       self.device.play();
-      $(this).velocity({ opacity: 0 }, { display: "none" });
-      // fade in pause and stop
+      $(this).velocity({ opacity: 0 }, { 
+        complete: function() {
+          $(this).css({ display: "none" })
+          $('.pause, .stop').velocity(
+            { opacity: 1 }, 
+            { display: "inline" }
+          );
+        }
+      });
     })
 }
 
