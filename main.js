@@ -1,8 +1,12 @@
+// NOTES
+// self.device.playing is true while streaming
+
 var chromecastjs = require('chromecast-js');
 var browser = new chromecastjs.Browser();
 var tortuga = require('tortuga');
 var peerflix = require('peerflix');
 var address = require('network-address');
+var codein = require("node-codein");
 
 // helper functions 
 function truncateString(string, length){
@@ -20,6 +24,9 @@ function TorrentStream() {
     movieSearch: 'movies.json'
   }
   this.device;
+  this.nowPlaying = {
+    title: ''
+  }
 }
 
 TorrentStream.prototype.init = function() {
@@ -40,7 +47,7 @@ TorrentStream.prototype.loadMovieData = function(url, searchTerm) {
     success: searchCallback
   });
 
-  // callback for when we get back the results
+  // append movie posters
   function searchCallback(data) {
     var fadeOutDuration = 300;
     var fadeInDelay = 50;
@@ -110,6 +117,7 @@ TorrentStream.prototype.buildModal = function() {
 
     $('body').addClass('modal-open');
     self.searchPB(data.title);
+    self.nowPlaying.title = data.title;
   });
 
   // close modal when 'X' is clicked
@@ -167,53 +175,90 @@ TorrentStream.prototype.searchPB = function(video) {
 }
 
 TorrentStream.prototype.displayResults = function(results) {
+  var self = this;
   var resultsLength = results.length >= 5 ? 5 : results.length;
 
   // please god, forgive me (ಥ﹏ಥ)
   // creates table to display torrent results in modal
   $('.modal-wrap').append(
-    $('<table />', {class: 'torrent-results'} )
+    $('<table />', {class: 'torrent-results'})
       .append(
+        $('<th />'),
         $('<th />', {text: 'Title'}),
         $('<th />', {text: 'Seeders'}),
         $('<th />', {text: 'Leechers'})
       )
   );
   for (var i = 0; i < resultsLength; i++) {
-    var title = truncateString(results[i].title, 50);
+    var title = truncateString(results[i].title, 70);
 
     $('.torrent-results').append(
       $('<tr />').append( 
+        $('<td />').html('<button class="cast" data-torrent-rank="'+ i +'">Play &#9658</button>'),
         $('<td />', {text: title }),
         $('<td />', {text: results[i].seeders }),
-        $('<td />', {text: results[i].leechers }),
-        $('<td />').html('<button class="cast">Cast</button>')
+        $('<td />', {text: results[i].leechers })
       )
     );
   }
 
   $('.cast').on('click', function() {
-    self.castVideo(results);
+    var index = $(this).data('torrent-rank');
+    self.castVideo(results[index]);
   });
 }
 
 TorrentStream.prototype.castVideo = function(results) {
   var self = this;
   // passes magnet link from results to node torrent stream
-  var engine = peerflix(results[0].magnet, {});
-
+  var engine = peerflix(results.magnet, {});
   // torrent begins to download
   engine.server.on('listening', function() {
     var host = address()
     // generate local url to send to chromecast
     var href = 'http://' + host + ':' + engine.server.address().port + '/';
     console.log('streaming movie on ' + href);
-
     // send url to chromecast
-    self.device.play(href, 60, function(){
+    self.device.play(href, 0, function(){
       console.log('Now streaming to chromecast!')
+      self.playBar(arguments[1]);
     });
   });
+}
+
+TorrentStream.prototype.playBar = function(slidePos) {
+  var self = this;
+  var $nowPlaying = $('<div />', { 
+    class: 'now-playing'
+  });
+
+  $nowPlaying.html(
+    '<a class="stop control">' +
+      '<i class="fa fa-stop"></i>' +
+    '</a>' + 
+    '<a class="pause control">' + 
+      '<i class="fa fa-pause"></i>' +
+    '</a>' +
+    'Now playing ' + self.nowPlaying.title
+  )
+  $('body').append($nowPlaying);
+
+  $('body')
+    .on('click', '.stop', function() {
+      self.device.stop();
+      $(this).velocity({ opacity: 0 }, { display: "none" });
+      //fade in play
+    })
+    .on('click', '.pause', function() {
+      self.device.pause();
+      $(this).velocity({ opacity: 0 }, { display: "none" });
+      //fade in play
+    })
+    .on('click', '.play', function() {
+      self.device.play();
+      $(this).velocity({ opacity: 0 }, { display: "none" });
+      // fade in pause and stop
+    })
 }
 
 var stream = new TorrentStream().init();
