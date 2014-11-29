@@ -30,24 +30,6 @@ h2 {
   font-size: 1.75em;
 }
 
-button {
-  background: none;
-  border: .1rem solid black;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-button:active {
-  background: #000;
-  color: #fff;
-  outline: none;
-}
-
-button:focus {
-  outline: none;
-}
-
 .wrap,
 .modal-wrap {
   position: relative;
@@ -217,6 +199,64 @@ button:focus {
 .now-playing .play {
   opacity: 0;
   display: none;
+}
+
+.progress-button {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  perspective: 900px;
+  padding: 0;
+  background: transparent;
+  perspective: 900px;
+  cursor: pointer;
+}
+
+.progress-button .progress {
+  border: .1rem solid black;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 4rem;
+  height: 1.25rem;
+  transform: rotateX(-90deg);
+  transform-origin: 50% 0%;
+  backface-visibility: hidden;
+}
+
+.progress-button .progress-inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #000;
+  transition: width 0.3s, opacity 0.3s;
+}
+
+.progress-button .progress-wrap {
+  display: block;
+  transition: transform 0.2s;
+  transform-style: preserve-3d;
+}
+
+.progress-button[data-perspective] .content {
+  border: .1rem solid #000;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  width: 4rem;
+  display: inline-block;
+}
+
+.progress-button.state-loading .progress-wrap {
+  transform: rotateX(90deg) translateZ(10px);
+}
+
+.state-loading {
+  cursor: default;
 }
 
 /*# sourceMappingURL=global.css.map */

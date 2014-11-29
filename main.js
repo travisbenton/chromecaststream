@@ -1,6 +1,11 @@
 // NOTES
 // self.device.playing is true while streaming
 
+// KNOWN BUGS
+// • Open modal, play movie, close modal and navigate to another movie, pause 
+// movie - the title changes to that of the movie in the modal, not the currently
+// playing film.
+
 var chromecastjs = require('chromecast-js');
 var browser = new chromecastjs.Browser();
 var tortuga = require('tortuga');
@@ -204,7 +209,17 @@ TorrentStream.prototype.displayResults = function(results) {
 
     $('.torrent-results').append(
       $('<tr />').append( 
-        $('<td />').html('<button class="cast" data-torrent-rank="'+ i +'">Play &#9658</button>'),
+        $('<td />').html(
+          // '<button class="cast" data-torrent-rank="'+ i +'">Play &#9658</button>'
+          '<button class="cast progress-button" data-torrent-rank="'+ i +'" data-style="rotate-side-down" data-perspective data-horizontal>' +
+            '<span class="progress-wrap">' +
+              '<span class="content">Play &#9658</span>' +
+              '<span class="progress">' +
+                '<span class="progress-inner"></span>' +
+              '</span>' +
+            '</span>' +
+          '</button>'
+        ),
         $('<td />', {text: title }),
         $('<td />', {text: results[i].seeders }),
         $('<td />', {text: results[i].leechers })
@@ -214,8 +229,18 @@ TorrentStream.prototype.displayResults = function(results) {
 
   $('.cast').on('click', function() {
     var index = $(this).data('torrent-rank');
+    var increasePercent = setInterval(addPercent, 500);
+
+    function addPercent() {
+      $('.progress-inner')
+        .velocity({
+          width: '+=5%'  
+        })
+    }
+    
     // cast local video if debugging (avoids my having to download
     // a torrent every time I test something)
+    $(this).addClass('state-loading');
     if (self.debug) {
       self.device.play('https://ia700408.us.archive.org/26/items/BigBuckBunny_328/BigBuckBunny_512kb.mp4', 0, function(){
         console.log('Now streaming to chromecast!');
