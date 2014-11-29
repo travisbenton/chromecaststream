@@ -4,7 +4,7 @@
 // KNOWN BUGS
 // • Open modal, play movie, close modal and navigate to another movie, pause 
 //   movie - the title changes to that of the movie in the modal, not the currently
-//   playing film.
+//   playing film. (Maybe fixed).
 // 
 // • Better error handeling - if user attempts to play multiple movies, weird 
 //   shit happens.
@@ -14,7 +14,7 @@ var browser = new chromecastjs.Browser();
 var tortuga = require('tortuga');
 var peerflix = require('peerflix');
 var address = require('network-address');
-var codein = require("node-codein");
+var codein = require('node-codein');
 
 // helper functions 
 function truncateString(string, length){
@@ -51,7 +51,7 @@ TorrentStream.prototype.init = function() {
 TorrentStream.prototype.loadMovieData = function(url, searchTerm) {
   $.ajax({
     url: url,
-    dataType: "jsonp",
+    dataType: 'jsonp',
     success: searchCallback
   });
 
@@ -126,7 +126,6 @@ TorrentStream.prototype.buildModal = function() {
 
     $('body').addClass('modal-open');
     self.searchPB(data.title);
-    self.nowPlaying.title = data.title;
   });
 
   // close modal when 'X' is clicked
@@ -144,7 +143,7 @@ TorrentStream.prototype.buildModal = function() {
   }
 
   // Trigger RT search on enter keypress
-  $('.search-input').bind("enterKey",function(e){
+  $('.search-input').bind('enterKey',function(e){
     var searchTerm = $('.search-input').val();
     var url = 'http://api.rottentomatoes.com/api/public/v1.0/' 
       + self.resultType.movieSearch 
@@ -158,7 +157,7 @@ TorrentStream.prototype.buildModal = function() {
   
   $('.search-input').keyup(function(e){
     if(e.keyCode == 13) {
-      $(this).trigger("enterKey");
+      $(this).trigger('enterKey');
     }
   });
 }
@@ -210,7 +209,7 @@ TorrentStream.prototype.displayResults = function(results) {
       $('<tr />').append( 
         $('<td />').html(
           // '<button class="cast" data-torrent-rank="'+ i +'">Play &#9658</button>'
-          '<button class="cast progress-button" data-torrent-rank="'+ i +'" data-style="rotate-side-down" data-perspective data-horizontal>' +
+          '<button class="cast progress-button" data-torrent-rank="'+ i +'" data-perspective>' +
             '<span class="progress-wrap">' +
               '<span class="content">Play &#9658</span>' +
               '<span class="progress">' +
@@ -300,6 +299,8 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
     class: 'now-playing'
   });
 
+  self.nowPlaying.title = data.title;
+
   // TO DO: Templatize
   $nowPlaying.html(
     '<div class="control-wrap">' +
@@ -327,35 +328,32 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
   $('body')
     .on('click', '.stop', function() {
       self.device.stop();
-      $(this).velocity({ opacity: 0 }, { 
-        complete: function() {
-          $(this).css({ display: "none" })
-          $('.play').velocity(
-            { opacity: 1 }, 
-            { display: "inline" }
-          );
-          $('.control-text').html(
-            self.nowPlaying.title + ' has been stopped'
-          );
-        } 
+      $nowPlaying.velocity('transition.slideDownBigOut', {
+        complete: function() { $(this).remove() }
       });
-      $('.pause').velocity({ opacity: 0 }, { display: "none" });
+      $('.pause').velocity(
+        { opacity: 0 }, 
+        { display: 'none' }
+      );
     })
     .on('click', '.pause', function() {
       self.device.pause();
       $(this).velocity({ opacity: 0 }, { 
         complete: function() {
-          $(this).css({ display: "none" })
+          $(this).css({ display: 'none' })
           $('.play').velocity(
             { opacity: 1 }, 
-            { display: "inline" }
+            { display: 'inline' }
           );
           $('.control-text').html(
             self.nowPlaying.title + ' is paused'
           );
         } 
       });
-      $('.stop').velocity({ opacity: 0 }, { display: "none" });
+      $('.stop').velocity(
+        { opacity: 0 }, 
+        { display: 'none' }
+      );
     })
     .on('click', '.play', function() {
       self.device.play(href, 0, function(){
@@ -364,10 +362,10 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
       });
       $(this).velocity({ opacity: 0 }, { 
         complete: function() {
-          $(this).css({ display: "none" })
+          $(this).css({ display: 'none' })
           $('.pause, .stop').velocity(
             { opacity: 1 }, 
-            { display: "inline" }
+            { display: 'inline' }
           );
           $('.control-text').html(
             'Now playing: ' + self.nowPlaying.title
