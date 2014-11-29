@@ -30,7 +30,8 @@ function TorrentStream() {
     newRelease:  'lists/dvds/new_releases.json',
     movieSearch: 'movies.json'
   }
-  this.nowPlaying = {
+  this.media = {
+    playing: false,
     title: ''
   }
   this.device;
@@ -194,12 +195,12 @@ TorrentStream.prototype.displayResults = function(results) {
   //
   // TO DO: Templatize
   $('.modal-wrap').append(
-    $('<table />', {class: 'torrent-results'})
+    $('<table />', { class: 'torrent-results' })
       .append(
         $('<th />'),
-        $('<th />', {text: 'Title'}),
-        $('<th />', {text: 'Seeders'}),
-        $('<th />', {text: 'Leechers'})
+        $('<th />', { text: 'Title' }),
+        $('<th />', { text: 'Seeders' }),
+        $('<th />', { text: 'Leechers' })
       )
   );
   for (var i = 0; i < resultsLength; i++) {
@@ -208,7 +209,6 @@ TorrentStream.prototype.displayResults = function(results) {
     $('.torrent-results').append(
       $('<tr />').append( 
         $('<td />').html(
-          // '<button class="cast" data-torrent-rank="'+ i +'">Play &#9658</button>'
           '<button class="cast progress-button" data-torrent-rank="'+ i +'" data-perspective>' +
             '<span class="progress-wrap">' +
               '<span class="content">Play &#9658</span>' +
@@ -218,16 +218,29 @@ TorrentStream.prototype.displayResults = function(results) {
             '</span>' +
           '</button>'
         ),
-        $('<td />', {text: title }),
-        $('<td />', {text: results[i].seeders }),
-        $('<td />', {text: results[i].leechers })
+        $('<td />', { text: title }),
+        $('<td />', { text: results[i].seeders }),
+        $('<td />', { text: results[i].leechers })
       )
     );
   }
 
+  // TO DO: Make less bad
+  $('.torrent-results').find('tr').each(function(i) {
+    $(this).velocity(
+      { opacity: 1 }, 
+      { delay: 125 * i }
+    );
+  });
+
   $('.cast').on('click', function() {
-    var index = $(this).data('torrent-rank');
-    var increasePercent = setInterval(addPercent, 500);
+    var index;
+    var increasePercent;
+
+    if (self.device.playing) { return; }
+    
+    index = $(this).data('torrent-rank');
+    increasePercent = setInterval(addPercent, 500);
 
     function addPercent() {
       var width = $('.progress-inner').width();
@@ -259,7 +272,7 @@ TorrentStream.prototype.displayResults = function(results) {
           { width: '100%' }, 
           { duration: 150 }
         );
-        self.nowPlaying.title = 'Big Buck Bunny';
+        self.media.title = 'Big Buck Bunny';
         self.playBar(arguments[1]);
       });
     } else {
@@ -299,7 +312,7 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
     class: 'now-playing'
   });
 
-  self.nowPlaying.title = data.title;
+  self.media.title = data.title;
 
   // TO DO: Templatize
   $nowPlaying.html(
@@ -318,7 +331,7 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
     '</div>' + 
 
     '<span class="control-text">' +
-      'Now playing: ' + self.nowPlaying.title + 
+      'Now playing: ' + self.media.title + 
     '</span>' 
   )
 
@@ -346,7 +359,7 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
             { display: 'inline' }
           );
           $('.control-text').html(
-            self.nowPlaying.title + ' is paused'
+            self.media.title + ' is paused'
           );
         } 
       });
@@ -368,7 +381,7 @@ TorrentStream.prototype.playBar = function(slidePos, href) {
             { display: 'inline' }
           );
           $('.control-text').html(
-            'Now playing: ' + self.nowPlaying.title
+            'Now playing: ' + self.media.title
           );
         }
       });
