@@ -24,18 +24,17 @@ function truncateString(string, length){
 
 // Constructor 
 function TorrentStream() {
-  this.debugFront = false;
   this.apikey     = 'dk6rs3fvy6d4eruntrxczh6f';
   this.num        = 15;
   this.resultType = {
-    newRelease:    'lists/dvds/new_releases.json',
+    newRelease:  'lists/dvds/new_releases.json',
     movieSearch: 'movies.json'
   }
   this.nowPlaying = {
     title: ''
   }
   this.device;
-  this.debug = true;
+  this.debug = false;
 }
 
 TorrentStream.prototype.init = function() {
@@ -233,14 +232,15 @@ TorrentStream.prototype.displayResults = function(results) {
 
     function addPercent() {
       var width = $('.progress-inner').width();
-      var parentWidth = $('.progress');
+      var parentWidth = $('.progress').width();
       var percent = 100 * width / parentWidth;
+      var threshold = 80;
       var increment;
 
-      if (percent >= 80) {
+      if (percent >= threshold) {
         clearInterval(increasePercent);
       } else {
-        increment = Math.ceil(Math.random() * 15 + 5);
+        increment = Math.floor(Math.random() * 4);
       }
 
       $('.progress-inner')
@@ -264,12 +264,12 @@ TorrentStream.prototype.displayResults = function(results) {
         self.playBar(arguments[1]);
       });
     } else {
-      self.castVideo(results[index]);
+      self.castVideo(results[index], increasePercent);
     }
   });
 }
 
-TorrentStream.prototype.castVideo = function(results) {
+TorrentStream.prototype.castVideo = function(results, interval) {
   var self = this;
   // passes magnet link from results to node torrent stream
   var engine = peerflix(results.magnet, {});
@@ -284,9 +284,11 @@ TorrentStream.prototype.castVideo = function(results) {
     // send url to chromecast
     self.device.play(href, 0, function(){
       console.log('Now streaming to chromecast!');
-
-      clearInterval(increasePercent);
-      $('.progress-inner').velocity({ width: '100%' }, { duration: 150 });
+      clearInterval(interval);
+      $('.progress-inner').velocity(
+        { width: '100%' }, 
+        { duration: 150 }
+      );
       self.playBar(arguments[1], href);
     });
   });
