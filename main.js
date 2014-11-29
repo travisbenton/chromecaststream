@@ -3,8 +3,11 @@
 
 // KNOWN BUGS
 // • Open modal, play movie, close modal and navigate to another movie, pause 
-// movie - the title changes to that of the movie in the modal, not the currently
-// playing film.
+//   movie - the title changes to that of the movie in the modal, not the currently
+//   playing film.
+// 
+// • Better error handeling - if user attempts to play multiple movies, weird 
+//   shit happens.
 
 var chromecastjs = require('chromecast-js');
 var browser = new chromecastjs.Browser();
@@ -229,7 +232,16 @@ TorrentStream.prototype.displayResults = function(results) {
     var increasePercent = setInterval(addPercent, 500);
 
     function addPercent() {
-      var increment = Math.ceil(Math.random() * 5 + 5);
+      var width = $('.progress-inner').width();
+      var parentWidth = $('.progress');
+      var percent = 100 * width / parentWidth;
+      var increment;
+
+      if (percent >= 80) {
+        clearInterval(increasePercent);
+      } else {
+        increment = Math.ceil(Math.random() * 15 + 5);
+      }
 
       $('.progress-inner')
         .velocity({
@@ -272,6 +284,8 @@ TorrentStream.prototype.castVideo = function(results) {
     // send url to chromecast
     self.device.play(href, 0, function(){
       console.log('Now streaming to chromecast!');
+
+      clearInterval(increasePercent);
       $('.progress-inner').velocity({ width: '100%' }, { duration: 150 });
       self.playBar(arguments[1], href);
     });
