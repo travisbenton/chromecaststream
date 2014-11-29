@@ -174,17 +174,14 @@ TorrentStream.prototype.connectToDevice = function() {
 TorrentStream.prototype.searchPB = function(video) {
   var self = this;
 
-  // when connected...
-  // this.device.on('connected', function(){
-    // search piratebay
-    tortuga.search({
-      query: video, 
-      sortType: 'seeders', 
-      category: 'video'
-    }, function(results) {
-      self.displayResults(results);
-    })
-  // });
+  // search piratebay
+  tortuga.search({
+    query: video, 
+    sortType: 'seeders', 
+    category: 'video'
+  }, function(results) {
+    self.displayResults(results);
+  })
 }
 
 TorrentStream.prototype.displayResults = function(results) {
@@ -232,19 +229,25 @@ TorrentStream.prototype.displayResults = function(results) {
     var increasePercent = setInterval(addPercent, 500);
 
     function addPercent() {
+      var increment = Math.ceil(Math.random() * 5 + 5);
+
       $('.progress-inner')
         .velocity({
-          width: '+=5%'  
-        })
-    }
-    
+          width: '+=' + increment  
+        }) 
+    }  
+
     // cast local video if debugging (avoids my having to download
     // a torrent every time I test something)
     $(this).addClass('state-loading');
     if (self.debug) {
       self.device.play('https://ia700408.us.archive.org/26/items/BigBuckBunny_328/BigBuckBunny_512kb.mp4', 0, function(){
         console.log('Now streaming to chromecast!');
-
+        clearInterval(increasePercent);
+        $('.progress-inner').velocity(
+          { width: '100%' }, 
+          { duration: 150 }
+        );
         self.nowPlaying.title = 'Big Buck Bunny';
         self.playBar(arguments[1]);
       });
@@ -258,21 +261,24 @@ TorrentStream.prototype.castVideo = function(results) {
   var self = this;
   // passes magnet link from results to node torrent stream
   var engine = peerflix(results.magnet, {});
+
   // torrent begins to download
   engine.server.on('listening', function() {
     var host = address()
     // generate local url to send to chromecast
     var href = 'http://' + host + ':' + engine.server.address().port + '/';
+
     console.log('streaming movie on ' + href);
     // send url to chromecast
     self.device.play(href, 0, function(){
-      console.log('Now streaming to chromecast!')
-      self.playBar(arguments[1]);
+      console.log('Now streaming to chromecast!');
+      $('.progress-inner').velocity({ width: '100%' }, { duration: 150 });
+      self.playBar(arguments[1], href);
     });
   });
 }
 
-TorrentStream.prototype.playBar = function(slidePos) {
+TorrentStream.prototype.playBar = function(slidePos, href) {
   var self = this;
   var $nowPlaying = $('<div />', { 
     class: 'now-playing'
@@ -284,9 +290,11 @@ TorrentStream.prototype.playBar = function(slidePos) {
       '<a class="stop control">' +
         '<i class="fa fa-stop"></i>' +
       '</a>' + 
+
       '<a class="pause control">' + 
         '<i class="fa fa-pause"></i>' +
       '</a>' +
+
       '<a class="play control">' + 
         '<i class="fa fa-play"></i>' +
       '</a>' +
@@ -334,7 +342,10 @@ TorrentStream.prototype.playBar = function(slidePos) {
       $('.stop').velocity({ opacity: 0 }, { display: "none" });
     })
     .on('click', '.play', function() {
-      self.device.play();
+      self.device.play(href, 0, function(){
+        console.log('Now streaming to chromecast!')
+        self.playBar(arguments[1], href);
+      });
       $(this).velocity({ opacity: 0 }, { 
         complete: function() {
           $(this).css({ display: "none" })
